@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="hojastilos.css">
+<title>UNAD OVA</title>
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "Imagenes/logoUNAD.png";
+          images[1] = "Imagenes/logoUNAD_GRIS2.png";
+      </script>
+</head>
+
+<body onload = "startTimer()">
+
+<div class="container">
+
+<header>
+   <h1>OBJETO VIRTUAL DE APRENDIZAJE PARA XXXXXXXXXXX”</h1>
+</header>
+  
+<section class="cabecera">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Opción 1 </a></li>
+    <li><a href="#">Opción 2 </a></li>
+	<li><a href="#">Opción 3 </a></li>
+  </ul>
+  </section>
+<section>
+   <img id="img" src="Imagenes/logoUNAD.png" alt="Logo Univesidad Nacional Abierta y a Distancia UNAD" style="width:630;height:133;"> 
+  </section>
+<nav>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Opción 1 </a></li>
+    <li><a href="#">Opción 2 </a></li>
+	<li><a href="#">Opción 3 </a></li>
+  </ul>
+</nav>
+
+<article>
+  <h2>Articulo 1 </h2>
+  <p>Parrafo 1.</p>
+  <p>Parrafo 2.</p>
+</article>
+<article>
+  <h2>Articulo 2 </h2>
+  <p>Parrafo 1.</p>
+  <p>Parrafo 2.</p>
+</article>
+<article>
+  <h2>Articulo 3 </h2>
+  <p>Parrafo 1.</p>
+  <p>Parrafo 2.</p>
+</article>
+<aside>
+  <h2>Contenido Adicional</h2>
+  <p>Parrafo 1.</p>
+  <p>Parrafo 2.</p>
+</aside>
+<footer>
+<img src="Imagenes/logoUNADgrisInferior.png" alt="Logo Univesidad Nacional Abierta y a Distancia UNAD" style="width:255;height:41;"> 
+<p><a href="https://estudios.unad.edu.co/ingenieria-de-sistemas/" target="_blank">Ingenieria de sistemas</a>  /  <a href="https://academia.unad.edu.co/ecbti/" target="_blank">Escuela de Ciencias Básicas, Tecnología e Ingeniería</a> </p>
+<img src="Imagenes/calidad1000.png" alt="Sello calidad 1000 UNAD" style="width:255;height:41;"> 
+<img src="Imagenes/calidad14001.png" alt="Sello calidad 14001 UNAD" style="width:255;height:41;"> 
+<img src="Imagenes/calidad18001.png" alt="Sello calidad 18001 UNAD" style="width:255;height:41;"> 
+<img src="Imagenes/calidad9001.png" alt="Sello calidad 9001 UNAD" style="width:255;height:41;"> 
+</footer>
+
+</div>
+
+</body>
+
+</html>
